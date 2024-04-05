@@ -11,7 +11,7 @@ utilizzando questa query 1' union select user, password from users# possiamo ved
 # Screen_6:
 utilizzando john the ripper possiamo decifrare le password facilmente
 # Screen_7:
-ricollegandoci allo screen_3 possiamo notare che esiste una tabella chiamata credit_cards e utilizzando questa query %' union select ccnumber, expiration from owasp10.credit_cards# possiamo vedere tutti gli ccnumber e le date di scadenza delle carte
+utilizzando questa query %' union select ccnumber, expiration from owasp10.credit_cards# possiamo vedere tutti gli ccnumber e le date di scadenza delle carte, per trovare il database abbiamo usato una query con information_schema e da li abbiamo trovato anche la tabella delle credit card
 # Screen_8:
 invece utilizzando questa query %' union select ccnumber, ccv from owasp10.credit_cards# possiamo vedere anche il CCV cosi da avere tutti i dati per le carte di credito
 # Screen_9:
